@@ -1,8 +1,7 @@
 // define the dependencies
-const twit = require('twit'),
-    config = require('./config');
+const twit = require('twit');
 
-const Twitter = new twit(config);
+const Twitter = new twit(process.env.consumer_key, process.env.consumer_secret, process.env.access_token, process.env.access_token_secret);
 const stream = Twitter.stream('user');
 
 // RETWEETER
