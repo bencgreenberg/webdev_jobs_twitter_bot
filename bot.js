@@ -43,7 +43,7 @@ let retweet = function() {
 
 retweet();
 // retweet every 10 minutes
-setInterval(retweet, 600000);
+setInterval(retweet, 30000);
 
 // SAY HELLO TO NEW FOLLOWERS
 
