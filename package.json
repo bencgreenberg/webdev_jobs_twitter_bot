@@ -1,0 +1,19 @@
+{
+  "name": "webdev_twitter_bot",
+  "version": "1.0.0",
+  "description": "Twitter Bot Retweets Web Developer Jobs From Across Twitter",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ben Greenberg",
+  "license": "MIT",
+  "dependencies": {
+    "twit": "^2.2.9"
+  }
+},
+{
+  "scripts": {
+    "start": "node bot.js",
+  }
+}
