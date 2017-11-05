@@ -31,7 +31,7 @@ let retweet = function() {
                     console.log('Successfully retweeted');
                 }
                 if (err) {
-                    console.log('Did not retweet');
+                    console.log(err);
                 }
             });
         }
@@ -69,7 +69,7 @@ function tweetNow(tweetTxt) {
   }
   Twitter.post('statuses/update', tweet, function(err, data, response) {
     if(err){
-      console.log("Could not reply");
+      console.log(err);
     }
     else{
       console.log("Said thank you to new follower");
