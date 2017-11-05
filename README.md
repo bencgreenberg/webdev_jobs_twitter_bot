@@ -11,5 +11,5 @@ To install a local copy on your computer:
 2. Clone it down
 3. Run `npm install` to install the dependencies
 4. Create a new Twitter account for your bot and get the appropriate keys by going to https://apps.twitter.com/app/new.
-5. Create a `config.js` file in your root directory and create an export of the keys (i.e. `consumer_key`, `consumer_secret`, etc.)
+5. Create a `config.js` file in your root directory and create an export of the keys (i.e. `consumer_key`, `consumer_secret`, etc.) OR setup the Twitter keys as environment variables and use them for configuration, which is helpful when deploying to services like Heroku. 
 6. Start up your new bot by running `node bot.js` from your terminal
