@@ -28,10 +28,11 @@ let retweet = function() {
                 id: rtId
             }, function(err, response) {
                 if (response) {
-                    console.log('Successfully retweeted');
+                  console.log('Successfully retweeted');
                 }
                 if (err) {
-                    console.log(err);
+                  console.log(rtId);
+                  console.log(err);
                 }
             });
         }
