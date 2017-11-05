@@ -22,15 +22,13 @@ let retweet = function() {
     }
     Twitter.get('search/tweets', params, function(err, data) {
         if (!err) {
-          let i = 0;
-          let rtId = data.statuses[i].id_str;
+          let rtId = data.statuses[0].id_str;
             // Retweet
           Twitter.post('statuses/retweet/:id', {
             id: rtId
           }, function(err, response) {
             if (response) {
               console.log('Successfully retweeted');
-              rtId = data.statuses[i+1].id_str;
             }
             if (err) {
               console.log(err);
@@ -45,8 +43,8 @@ let retweet = function() {
 }
 
 retweet();
-// retweet every 10 minutes
-setInterval(retweet, 30000);
+// retweet every 40 minutes
+setInterval(retweet, 2000000);
 
 // SAY HELLO TO NEW FOLLOWERS
 
