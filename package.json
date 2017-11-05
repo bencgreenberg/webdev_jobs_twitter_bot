@@ -2,6 +2,7 @@
   "name": "webdev_twitter_bot",
   "version": "1.0.0",
   "description": "Twitter Bot Retweets Web Developer Jobs From Across Twitter",
+  "url" : "https://github.com/benhayehudi/webdev_jobs_twitter_bot",
   "main": "bot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
