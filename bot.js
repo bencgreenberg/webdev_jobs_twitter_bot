@@ -16,7 +16,7 @@ const stream = Twitter.stream('user');
 // get latest tweet
 let retweet = function() {
     let params = {
-        q: '#webdev, #jobs',
+        q: '#developer, #jobs',
         result_type: 'recent',
         lang: 'en'
     }
