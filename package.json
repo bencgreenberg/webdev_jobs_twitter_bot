@@ -10,7 +10,4 @@
   "license": "MIT",
   "dependencies": {
     "twit": "^2.2.9"
-  },
-  "scripts": {
-    "start": "node bot.js",
   }
